@@ -18,7 +18,7 @@ the unsentは、誰かに伝えたかったけれど、送ることのなかっ�
 
 実際にメールを送信するのではなく、伝えられなかった言葉を自分のために残しておくことをコンセプトにしています。
 
-## ③ アプリのデプロイURL
+https://sisifa-yoky.github.io/the-unsent/
 
 （GitHub PagesのURLを後で追加）
 
