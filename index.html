@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>言えなかったメール。</title>
+    <link rel="stylesheet" href="css/sample.css">
+</head>
+<body>
+
+<div class="site-wrapper" id="top">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-decoration">✧･ﾟ: *✧･ﾟ:*　　☆　　*:･ﾟ✧*:･ﾟ✧</div>
+        <h1>the unsent</h1>
+        <div class="header-subtitle">
+            送らなかった言葉を、ここに残しておく。
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="navigation">
+        <a href="#" id="navNew">NEW MESSAGE</a>
+        <a href="#" id="navArchive">ARCHIVE</a>
+    </nav>
+
+    <main class="content-area">
+
+        <!-- NEW MESSAGE -->
+        <section id="home">
+            <div class="section-title">
+                <span>✉</span> NEW MESSAGE
+                <small>新しいメールを書く</small>
+            </div>
+
+            <div class="form-window">
+                <div class="window-bar">
+                    <span>✉ メール作成フォーム</span>
+                    <span>NEW MAIL</span>
+                </div>
+
+                <div class="form-content">
+
+                    <label for="to">宛先</label>
+                    <input type="text" id="to" placeholder="誰に送る？">
+
+                    <label for="subject">件名</label>
+                    <input type="text" id="subject" placeholder="件名を入力">
+
+                    <label for="genre">カテゴリー</label>
+                    <select id="genre">
+                        <option value="goodbye">さよなら</option>
+                        <option value="thanks">ありがとう</option>
+                        <option value="sorry">ごめんなさい</option>
+                        <option value="love">好きでした</option>
+                        <option value="miss">会いたい</option>
+                        <option value="myself">自分へ</option>
+                    </select>
+
+                    <label for="memo">本文</label>
+                    <textarea id="memo" placeholder="ここにメッセージを入力..."></textarea>
+
+                    <div class="form-note">
+                        ※ このメールは実際には送信されません。
+                    </div>
+
+                    <button id="save" class="blue-button">
+                        メールを保存する ☆
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ARCHIVE -->
+        <section id="archivePage">
+            <div class="section-title">
+                <span>▣</span> MAIL ARCHIVE
+                <small>保存したメール</small>
+            </div>
+
+            <div class="window-bar">
+                <span>保存メール一覧</span>
+                <span id="archiveCount">0 件</span>
+            </div>
+
+            <div class="archive-intro">
+                これまでに保存したメールです。
+            </div>
+
+            <div id="list"></div>
+
+            <div id="empty">
+                <p>✉ メールはまだありません。</p>
+                <span>新しいメールを書いて保存してみましょう。</span>
+            </div>
+
+            <button id="homeButton" class="text-button">
+                ◀ 新規メール作成へ戻る
+            </button>
+        </section>
+
+        <!-- MESSAGE READER -->
+        <section id="reader">
+            <div class="section-title">
+                <span>✉</span> MAIL VIEW
+                <small>メール詳細</small>
+            </div>
+
+            <div id="letter"></div>
+
+            <button id="backToArchive" class="text-button">
+                ◀ メール一覧へ戻る
+            </button>
+
+            <button id="deleteMessage" class="delete-button">
+                このメールを削除する
+            </button>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>☆ ★ ☆ ★ ☆ ★ ☆</p>
+    </footer>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
